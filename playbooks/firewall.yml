@@ -1,0 +1,27 @@
+---
+- name: Configure a firewall
+  hosts: amazon_linux
+  become: true
+  tasks:
+    - name: Install firewalld
+      yum:
+        name: firewalld
+        state: present
+
+    - name: Start and enable firewalld
+      service:
+        name: firewalld
+        state: started
+        enabled: true
+
+    - name: Allow SSH and HTTP traffic
+      firewalld:
+        service: "{{ item }}"
+        permanent: true
+        state: enabled
+      with_items:
+        - ssh
+        - http
+
+    - name: Reload firewall rules
+      command: firewall-cmd --reload
