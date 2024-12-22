@@ -1,0 +1,17 @@
+---
+- name: Create a new user
+  hosts: amazon_linux
+  become: true
+  tasks:
+    - name: Add a user with sudo privileges
+      user:
+        name: ansible_user
+        shell: /bin/bash
+        groups: wheel
+        state: present
+
+    - name: Set up an SSH key for the new user
+      authorized_key:
+        user: ansible_user
+        key: "ssh-rsa AAAA..."
+        state: present
