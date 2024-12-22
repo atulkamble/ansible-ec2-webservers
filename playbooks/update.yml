@@ -1,0 +1,9 @@
+---
+- name: Update all packages
+  hosts: amazon_linux
+  become: true
+  tasks:
+    - name: Update all packages to the latest version
+      yum:
+        name: "*"
+        state: latest
