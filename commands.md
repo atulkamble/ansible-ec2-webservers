@@ -18,12 +18,12 @@ sudo dnf install ansible -y
 # sudo pip3 install ansible
 
 # Create necessary Ansible directory structure
-sudo mkdir -p /etc/ansible/aws/aws_keys
+sudo mkdir -p /etc/ansible/aws
 sudo mkdir -p /etc/ansible/inventory
 sudo mkdir -p /etc/ansible/playbooks
 
 # Create your private key file
-sudo touch /etc/ansible/aws/aws_keys/ansible.pem
+sudo touch /etc/ansible/aws/ansible.pem
 
 # Check Ansible version
 ansible --version
