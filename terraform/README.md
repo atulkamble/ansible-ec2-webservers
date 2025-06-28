@@ -1,5 +1,3 @@
-Excellent request — let’s build clean, modular, production-grade Terraform code to launch:
-
 * **1 Ansible Server (t3.medium)**
 * **2 Hosts (t3.micro)**
 * All in **us-east-1**
@@ -261,6 +259,4 @@ terraform apply
 * Simple Ansible install via `user_data` on ansible-server.
 * All public IPs exposed via `terraform output`.
 
----
 
-Would you like me to package this into a downloadable repo archive as well? I can generate one for you.
