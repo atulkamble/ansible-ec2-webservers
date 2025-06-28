@@ -1,3 +1,4 @@
+```
 sudo dnf update -y
 sudo dnf install python -y
 sudo dnf install pip -y
@@ -15,3 +16,4 @@ sudo nano inventory/hosts
 
 sudo nano ansible.cfg
 ansible -m ping all
+```
