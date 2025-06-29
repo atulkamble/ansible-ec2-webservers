@@ -1,3 +1,15 @@
+# Configure Ansible Server and hosts 
+```
+git clone https://github.com/atulkamble/ansible-ec2-webservers.git
+cd ansible-ec2-webservers/terraform
+terraform init 
+terraform plan
+terraform apply 
+```
+# delete Infra Env 
+```
+terraform destroy
+```
 ```
 git clone https://github.com/atulkamble/ansible-ec2-webservers.git
 cd ansible-ec2-webservers
