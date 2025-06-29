@@ -1,7 +1,7 @@
 # Configure Ansible Server and hosts 
 ```
-git clone https://github.com/atulkamble/ansible-ec2-webservers.git
-cd ansible-ec2-webservers/terraform
+git clone https://github.com/atulkamble/aws-ansible-terraform-webservers.git
+cd aws-ansible-terraform-webservers/terraform
 terraform init 
 terraform plan
 terraform apply 
@@ -10,13 +10,10 @@ terraform apply
 ```
 terraform destroy
 ```
-```
-git clone https://github.com/atulkamble/ansible-ec2-webservers.git
-cd ansible-ec2-webservers
-```
+
 # tips
 ```
-1. From AWS EC2 Console >> Create Keypair >> Replace keypair path
+1. From AWS EC2 Console >> Create Keypair >> Replace keypair path (ansible.pem)
 2. sign in as root >> su >> enter password
 ```
 # ansible-ec2-webservers
